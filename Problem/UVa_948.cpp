@@ -2,17 +2,18 @@
 using namespace std;
 
 int main(){
-    int a;
+    int n,a;
     int arr[40]={0,1};
     for(int i=2;i<40;i++){
         arr[i] = arr[i-1]+arr[i-2];
     }
-    cin>>a;
-    for(int i=1;i<=a;i++){
+    cin>>n;
+    for(int i=0;i<n;i++){
+        cin>>a;
         int base[41]={};
+        int check=0;
         cout<<a<<" = ";
         for(int j=39;j>=2;j--){
-            int check=0;
             if(a-arr[j]>=0){
                 check = 1;
                 if(base[j+1]!=1){
@@ -24,6 +25,6 @@ int main(){
                 cout<<base[j];
             }
         }
-        cout<<" (fib)";
+        cout<<" (fib)"<<endl;
     }
 }
