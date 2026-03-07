@@ -3,7 +3,7 @@
 using namespace std;
 
 int main(){
-    int t,x;
+    int t;
     int arr[50];
     cin>>t;
     for(int i=0;i<t;i++){
