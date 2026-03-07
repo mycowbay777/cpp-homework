@@ -15,7 +15,7 @@ int main(){
         int count2=0;
         cin>>n;
         int temp = n;
-        for(int k=10;k>=0;k--){
+        for(int k=13;k>=0;k--){
             if(n-arr[k]>=0){
                 n = n-arr[k];
                 count1++;
@@ -24,7 +24,7 @@ int main(){
         while(temp!=0) {
             num = temp%10;
             temp=temp/10;
-            for(int k=10;k>=0;k--){
+            for(int k=13;k>=0;k--){
                 if(num-arr[k]>=0){
                     num = num-arr[k];
                     count2++;
