@@ -21,7 +21,7 @@ int main(){
         for(int i=0;i<p;i++){
             cin>>day;
             int gap = day;
-            for(int k=0;k<n/gap;k++){
+            for(int k=0;k<n/gap;k++){ //記得用gap去算迴圈 不藥用day
                 if(!(day % 7 == 0 || day % 7 == 6)){
                     base[day] = 1;
                 }
