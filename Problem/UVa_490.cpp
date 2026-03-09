@@ -15,7 +15,7 @@ int main(){
     for(int i=0;i<maxlong;i++){
         for(int j=rownum-1;j>=0;j--){ //rownum會多1 所以要扣掉
             if( i <arr[j].length()){
-                cout<<arr[j][i];
+                cout<<arr[j][i]; //j表示第幾行 i表示單行中印到第幾個字
             }
             else{
                 cout<<' ';
