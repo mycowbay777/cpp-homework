@@ -5,14 +5,16 @@ using namespace std;
 int main(){
     int step;
     int mod;
-    int seed=0;
+    
     while(cin>>step>>mod){
-        int count=1;
+        int seed=0;
+        int count=0;
         for(int i=0;i<mod;i++){
             seed = (seed+step)%mod;
-             if(seed!=0){
-                count++;
-             }
+            count++;
+            if(seed==0&&i<mod-1){
+                break;
+            }
         }
         cout<<setw(10)<<step<<setw(10)<<mod;
         if(count==mod){
