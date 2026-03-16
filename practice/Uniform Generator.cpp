@@ -16,10 +16,10 @@ int main(){
         }
         cout<<setw(10)<<step<<setw(10)<<mod;
         if(count==mod){
-            cout<<'     '<<"Good Choice";
+            cout<<"    Good Choice"<<'\n'<<'\n';
         }
         else{
-            cout<<'     '<<"Bad Choice";
+            cout<<"    Bad Choice"<<'\n'<<'\n';
         }
     }
     
