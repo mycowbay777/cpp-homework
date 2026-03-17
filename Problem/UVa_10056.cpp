@@ -7,8 +7,8 @@ int main(){
     for(int i=0;i<t;i++){
         int n,k;
         double p;
-        double q = 1-p;
         cin>>n>>p>>k;
+        double q = 1-p;
         if(p==0){
             cout<<0.0000<<'\n';
         }
