@@ -18,7 +18,7 @@ int main(){
                 cout<<enter[i];
             }
             else{
-                for(int k=0;k<48;k++){
+                for(int k=0;k<50;k++){
                     if(enter[i]==keyboard[k]){
                         cout<<keyboard[k-1];
                     }   
