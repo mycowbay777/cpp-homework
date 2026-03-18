@@ -1,4 +1,5 @@
 #include<bits/stdc++.h>
+#include<iomanip>
 using namespace std;
 
 int main(){
@@ -8,13 +9,13 @@ int main(){
         int n,k;
         double p;
         cin>>n>>p>>k;
-        double q = 1-p;
+        double q = 1.0 -p;
         if(p==0){
             cout<<0.0000<<'\n';
         }
         else{
-            int ans = (pow(q,k-1)*p)/(1-pow(q,n));
-            cout<<ans;
+            double ans = (pow(q,k-1)*p)/(1.0-pow(q,n));
+            cout<<fixed<<setprecision(4)<<ans<<'\n';
         }
     }
 }
