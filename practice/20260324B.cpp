@@ -6,19 +6,23 @@ int main(){
     cin>>t;
     string s;
     getline(cin,s);
+     map<string,int> mp;
     while(t--){
         getline(cin,s);
         int num=0;
         for(int i=0;i<s.length();i++){
             if(s[i]==' '){
-                int num=i;
+                num=i;
                 break;
             }
         }
-        string a;
+        string a="";
         for(int i=0;i<num;i++){
-            a[i] = s[i];
+            a.push_back(s[i]);
         }
-        map<string,int> mp;
+        mp[a]++;
+    }
+    for(auto i :mp){
+        cout<<i.first<<" "<<i.second<<endl;
     }
 }
