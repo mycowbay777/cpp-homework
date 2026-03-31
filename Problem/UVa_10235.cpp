@@ -23,12 +23,8 @@ int main(){
             new_n.push_back(remainder);
         }
         int total=0;
-        for(int i=new_n.size()-1;i>=0;i--){
-            total=total + new_n[i]*pow(10,i);
-        }
-        int same=0;
-        if(total==nn){
-            same=1;
+        for(int i=0;i<new_n.size();i++){
+            total=total*10+new_n[i];
         }
         int emirp=1;
         num = sqrt(total);
@@ -38,14 +34,16 @@ int main(){
                 break;
             }
         }
-        if(emirp==1&&same==0){
-            cout<<nn<<" is emirp"<<endl;
-        }
-        else if(prime==1){
-            cout<<nn<<" is prime"<<endl;
+        if(prime==0){
+            cout<<nn<<" is not prime."<<endl;
         }
         else{
-            cout<<nn<<" is not prime"<<endl;
+            if(total!=nn&&emirp==1){
+                cout<<nn<<" is emirp."<<endl;
+            }
+            else{
+                cout<<nn<<" is prime."<<endl;
+            }
         }
     }
 }
