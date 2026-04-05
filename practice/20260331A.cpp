@@ -23,7 +23,10 @@ int main(){
             }
         }
         if(button==4&&press==1){
-            cout<<a<<endl;
+            for(int i=0;i<a.size();i++){
+                cout<<a[i]<<" ";
+            }
+            cout<<endl;
             return 0;
         }
     }
