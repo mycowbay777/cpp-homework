@@ -21,7 +21,7 @@ int main(){
                 for(int j=0;j<sum;j++){
                     cout<<letter;
                 }
-
+                i=next-1;
             }
             
         }
