@@ -6,7 +6,7 @@ vector<int> gg[105];
 bool visited[105];
 void dfs(int u){
     for(int v:gg[u]){ //這裡的for迴圈會把gg[u]裡面的項存到v再去跑
-        if(!visited){
+        if(!visited[v]){
             visited[v]=true;
             dfs(v);
         }
